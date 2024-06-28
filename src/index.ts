@@ -1,7 +1,6 @@
 export const start = async () => {
   const requiredEnvVars = [
     'PORT',
-    'DATABASE_URL',
     'JWT_SECRET',
     'JWT_EXPIRES_IN_DAYS',
     'MIN_PASSWORD_LENGTH',
