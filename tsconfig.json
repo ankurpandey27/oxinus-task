@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "typeRoots": ["./node_modules/@types", "types"],
+    "types": ["node"],
+    "paths": {
+      "@environments": ["src/core/environment"],
+      "@constants": ["src/core/constant"],
+      "@errors": ["src/core/error-code"],
+      "@utility": ["src/core/utility"],
+      "@config": ["src/core/config"],
+		},
+    "noFallthroughCasesInSwitch": false,
+  },
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "document",
+    "dist",
+    "backup",
+    "**/*.spec.ts"
+  ]
+}
